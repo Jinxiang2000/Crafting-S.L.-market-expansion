@@ -1,0 +1,13 @@
+max 30y1 + 9y2 + 25y3 - 5x1 - 3x2 - 1.5x3 - 2z
+subject to
+Cloth_1) x1 <= 5500
+Yarn_1) x2 <= 3000
+Craft_Material_1) x3 <= 500
+Purchased_Craft) z <= 1000
+Labour) 30x1 + 5x2 + 50x3 <= 120000
+Cloth_2) x1 - y1 - 0.12x3 = 0
+Yarn_2) x2 - y2 - x1 - 0.75x3 = 0
+Craft_Material_2) x3 + z - y3 - 0.1x1 - 0.05x2 = 0
+x1 - y1 >=0
+x2 - y2 >= 0
+x3 - y3 >=0
